@@ -15,7 +15,7 @@ public class Pais {
             vendidos.put(this, vendidos.get(nombre)+1);
         }
         int n = vendidos.get(this);
-        if Pais.masVendedor == null){
+        if (Pais.masVendedor == null){
             Pais.masVendedor = this;
         } else if (vendidos.get(this) > vendidos.get(Pais.masVendedor)){
             Pais.masVendedor = this;
