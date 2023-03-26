@@ -31,10 +31,10 @@ public class Vehiculo{
         }
     }
 
-    public String vehiculosPorTipo(){
+    public static String vehiculosPorTipo(){
         return "Automoviles: " + cantidadAutos + "Camionetas: " + cantidadCamionetas + "Camiones: " + cantidadCamiones;
     }
-    public int getCantidadVehiculos(){
+    public static int getCantidadVehiculos(){
         return this.CantidadVehiculos;
     }
     public void setCantidadVehiculos(int c){
