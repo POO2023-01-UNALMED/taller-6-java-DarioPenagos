@@ -19,7 +19,7 @@ public class Pais {
         for(Map.Entry<Pais,Integer> entry : vendidos.entrySet()){
             if (entry.getValue() > n){
                 n = entry.getValue();
-                Pais.masVendedor = entry.getValue();
+                Pais.masVendedor = entry.getKey();
             }
         }
         
