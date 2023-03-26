@@ -34,13 +34,13 @@ public class Pais {
     
     public static Pais paisMasVendedor(){
         int n = 0;
-        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet){
+        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
             if(entry.getValue() > n){
                 n = entry.getValue();
             }
         }
-        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet){
-            if(n = entry.getValue()){
+        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
+            if(n == entry.getValue()){
                 return entry.getKey();
             }
         }
