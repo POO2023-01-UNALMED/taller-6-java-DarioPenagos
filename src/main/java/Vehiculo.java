@@ -38,7 +38,7 @@ public class Vehiculo{
         return this.CantidadVehiculos;
     }
     public void setCantidadVehiculos(int c){
-        this.CantidadVehiculos = i;
+        this.CantidadVehiculos = c;
     }
 
     public String getPlaca(){
