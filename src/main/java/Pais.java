@@ -15,12 +15,10 @@ public class Pais {
             vendidos.put(this, vendidos.get(nombre)+1);
         }
         int n = vendidos.get(this);
-        Pais.masVendedor = this;
-        for(Map.Entry<Pais,Integer> entry : vendidos.entrySet()){
-            if (entry.getValue() > n){
-                n = entry.getValue();
-                Pais.masVendedor = entry.getKey();
-            }
+        if Pais.masVendedor == null){
+            Pais.masVendedor = this;
+        } else if (vendidos.get(this) > vendidos.get(Pais.masVendedor)){
+            Pais.masVendedor = this;
         }
         
     }
