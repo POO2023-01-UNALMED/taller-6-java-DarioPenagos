@@ -15,14 +15,13 @@ public class Pais {
             vendidos.put(this, vendidos.get(nombre)+1);
         }
 
-        /*
         int n = vendidos.get(this);
         if (Pais.masVendedor == null){
             Pais.masVendedor = this;
         } else if (vendidos.get(this) > vendidos.get(Pais.masVendedor)){
             Pais.masVendedor = this;
         }
-        */
+        System.out.println(masVendedor);
     }
     public String getNombre(){
         return this.nombre;
@@ -31,7 +30,7 @@ public class Pais {
         this.nombre = n;
     }
 
-    
+    /*
     public static Pais paisMasVendedor(){
         int n = 0;
         for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
@@ -46,6 +45,6 @@ public class Pais {
         }
         return masVendedor;
     }
-    
+    */
 
 }
