@@ -35,10 +35,10 @@ public class Vehiculo{
         return "Automoviles: " + cantidadAutos + "Camionetas: " + cantidadCamionetas + "Camiones: " + cantidadCamiones;
     }
     public static int getCantidadVehiculos(){
-        return this.CantidadVehiculos;
+        return Vehiculo.CantidadVehiculos;
     }
     public void setCantidadVehiculos(int c){
-        this.CantidadVehiculos = c;
+        Vehiculo.CantidadVehiculos = c;
     }
 
     public String getPlaca(){
