@@ -9,7 +9,7 @@ public class Camioneta extends Vehiculo{
     public boolean isVolco(){
         return volco;
     }
-    public boolean setVolco(boolean v){
+    public void setVolco(boolean v){
         this.volco = v;
     }
     
