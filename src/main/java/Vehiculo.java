@@ -102,7 +102,7 @@ public class Vehiculo{
 
     
     public static Fabricante fabricaMayorVentas(){
-        Fabricante m;
+        Fabricante m = null;
         int n = 0;
         for(Map.Entry<Fabricante,Integer> entry : fab.entrySet()){
             if (n == 0 || entry.getValue() > n){
