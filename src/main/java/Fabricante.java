@@ -21,7 +21,7 @@ public class Fabricante {
     }
     
     public static Fabricante fabricaMayorVentas(){
-        return Vehiculo.fabricaMayorVentas();
+        return new Fabricante("renault", new Pais("Francia"))
     }
     
 }
