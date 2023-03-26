@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Pais {
     String nombre = "";
-    static Pais masVendedor = new Pais("");
+    Pais masVendedor = new Pais("");
     static Map<Pais, Integer> vendidos = new HashMap<Pais, Integer>();
     public Pais(String nombre){
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class Pais {
     
     public static Pais paisMasVendedor(){
         int n = 0;
-        Pais p = Pais.masVendedor;
+        Pais p = masVendedor;
         for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
             if(entry.getValue() > n){
                 n = entry.getValue();
