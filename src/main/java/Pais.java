@@ -42,6 +42,7 @@ public class Pais {
         for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
             if(n == entry.getValue()){
                 return entry.getKey();
+            } else {
                 p = entry.getKey();
             }
         }
