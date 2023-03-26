@@ -22,7 +22,6 @@ public class Pais {
             Pais.masVendedor = this;
         }
         */
-        
     }
     public String getNombre(){
         return this.nombre;
@@ -44,7 +43,7 @@ public class Pais {
                 return entry.getKey();
             }
         }
-        return null;
+        return "Hola";
     }
     
 
