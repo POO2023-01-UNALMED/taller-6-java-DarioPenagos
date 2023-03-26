@@ -5,14 +5,16 @@ import java.util.HashMap;
 
 public class Pais {
     String nombre = "";
-    static Map<Pais, Integer> vendidos = new HashMap<Pais, Integer>();
+    //static Map<Pais, Integer> vendidos = new HashMap<Pais, Integer>();
     public Pais(String nombre){
         this.nombre = nombre;
+        /*
         if(vendidos.containsKey(nombre)){
             vendidos.put(this, 1);
         } else {
             vendidos.put(this, vendidos.get(nombre)+1);
         }
+        */
     }
     public String getNombre(){
         return this.nombre;
@@ -21,6 +23,7 @@ public class Pais {
         this.nombre = n;
     }
 
+    /*
     public static Pais paisMasVendedor(){
         Pais m = new Pais("nonononononononono");
         int n = 0;
@@ -32,5 +35,6 @@ public class Pais {
         }
         return m;
     }
+    */
 
 }
