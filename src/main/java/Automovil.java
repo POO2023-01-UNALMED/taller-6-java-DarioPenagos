@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Automvil extends Vehículo{
+public class Automovil extends Vehiculo{
     int puestos;
     public Automovil(String plac, String nom, int pre, int pes, Fabricante f, int puestos){
         super(plac, 4, 100, nom, pre, pes, "FWD", f);
