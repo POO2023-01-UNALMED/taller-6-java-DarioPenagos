@@ -1,4 +1,4 @@
-package vehículos;
+package vehiculos;
 
 public class Camion extends Vehículo{
     int ejes;

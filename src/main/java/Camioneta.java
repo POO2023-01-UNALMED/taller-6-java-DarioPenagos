@@ -1,4 +1,4 @@
-package vehículos;
+package vehiculos;
 
 public class Camioneta extends Vehículo{
     boolean volco;
