@@ -16,7 +16,7 @@ public class Vehiculo{
     static int cantidadAutos = 0;
     static int cantidadCamionetas = 0;
     static int cantidadCamiones =0;
-    static Map<Fabricante, Integer> fabricante = new HashMap<Fabricante, Integer>();
+    static Map<Fabricante, Integer> fab = new HashMap<Fabricante, Integer>();
 
     public Vehiculo(String placa, int puertas, int vmax, String nom, int precio, int peso, String trac, Fabricante f){
         this.placa = placa;
@@ -34,10 +34,10 @@ public class Vehiculo{
         } else if (trac.equals("4X4")){
             this.cantidadCamionetas++;
         }
-        if (fabricante.containsKey(f)){
-            fabricante.put(f, 1);
+        if (fab.containsKey(f)){
+            fab.put(f, 1);
         } else {
-            fabricante.put(f, fabricante.get(f) + 1);
+            fab.put(f, fab.get(f) + 1);
         }
     }
 
@@ -103,7 +103,7 @@ public class Vehiculo{
     public static Fabricante fabricaMayorVentas(){
         Fabricante m = new Fabricante("noo", new pais("nononononononoo"));
         int n = 0;
-        for(Map.Entry<Fabricante,Integer> entry : vendidos.entrySet()){
+        for(Map.Entry<Fabricante,Integer> entry : fab.entrySet()){
             if (n == 0 || entry.getValue() > n){
                 m = entry.getKey();
                 n = entry.getValue();
