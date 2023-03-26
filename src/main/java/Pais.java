@@ -23,7 +23,7 @@ public class Pais {
         this.nombre = n;
     }
 
-    /*
+    
     public static Pais paisMasVendedor(){
         Pais m = new Pais("nonononononononono");
         int n = 0;
@@ -35,6 +35,6 @@ public class Pais {
         }
         return m;
     }
-    */
+    
 
 }
