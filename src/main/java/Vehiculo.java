@@ -37,7 +37,7 @@ public class Vehiculo{
         if (fabricante.containsKey(f)){
             fabricante.put(f, 1);
         } else {
-            fabricante.put(f, fabricante.get(f) + 1)
+            fabricante.put(f, fabricante.get(f) + 1);
         }
     }
 
@@ -103,7 +103,7 @@ public class Vehiculo{
     public static Fabricante fabricaMayorVentas(){
         Fabricante m = new Fabricante("noo", new pais("nononononononoo"));
         int n = 0;
-        for Map.Entry<Fabricante,Integer> entry : vendidos.entrySet(){
+        for(Map.Entry<Fabricante,Integer> entry : vendidos.entrySet()){
             if (n == 0 || entry.getValue() > n){
                 m = entry.getKey();
                 n = entry.getValue();

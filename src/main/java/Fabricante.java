@@ -21,6 +21,6 @@ public class Fabricante {
     }
 
     public static Fabricante fabricaMayorVentas(){
-        return Vehiculo.fabricaMayorVentas()
+        return Vehiculo.fabricaMayorVentas();
     }
 }
