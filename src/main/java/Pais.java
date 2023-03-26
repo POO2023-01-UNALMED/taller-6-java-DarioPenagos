@@ -23,13 +23,14 @@ public class Pais {
 
     public static int paisMasVendedor(){
         String m;
-        int n;
+        int n = 0;
         for(Map.Entry<String,Integer> entry : vendidos.entrySet()){
             if (n == 0 || entry.getValue() > n){
                 m = entry.getKey();
                 n = entry.getValue();
             }
         }
+        return n;
     }
 
 }
