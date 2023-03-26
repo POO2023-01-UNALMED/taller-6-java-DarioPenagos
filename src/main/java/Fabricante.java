@@ -19,8 +19,9 @@ public class Fabricante {
     public void setPais(Pais p){
         this.pais = p;
     }
-
+    /*
     public static Fabricante fabricaMayorVentas(){
         return Vehiculo.fabricaMayorVentas();
     }
+    */
 }
