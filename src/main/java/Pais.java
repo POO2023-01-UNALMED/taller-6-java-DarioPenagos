@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Pais {
     String nombre = "";
-    static Map<String, int> vendidos = new HashMap<String, int>;
+    static Map<String, int> vendidos = new HashMap<String, int>();
     public Pais(String nombre){
         this.nombre = nombre;
         if(vendidos.containsKey(nombre)){
