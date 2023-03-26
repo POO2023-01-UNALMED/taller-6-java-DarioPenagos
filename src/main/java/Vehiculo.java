@@ -34,10 +34,12 @@ public class Vehiculo{
         } else if (trac.equals("4X4")){
             this.cantidadCamionetas++;
         }
+        /*
         if(!fabr.contains(f)){
             fabr.add(f);
             numFab.add(1);
         }
+        */
         System.out.println(fabr);
     }
 
