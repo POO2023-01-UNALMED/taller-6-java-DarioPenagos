@@ -1,7 +1,6 @@
 package vehiculos;
 
-import java.util.Map;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Vehiculo{
     String placa;
@@ -16,7 +15,8 @@ public class Vehiculo{
     static int cantidadAutos = 0;
     static int cantidadCamionetas = 0;
     static int cantidadCamiones =0;
-    static Map<Fabricante, Integer> fab = new HashMap<Fabricante, Integer>();
+    static ArrayList<Integer> numFab = new ArrayList<Integer>(0);
+    static ArrayList<Fabricante> fabr = new ArrayList<Fabricante>(0);
 
     public Vehiculo(String placa, int puertas, int vmax, String nom, int precio, int peso, String trac, Fabricante f){
         this.placa = placa;
@@ -34,11 +34,11 @@ public class Vehiculo{
         } else if (trac.equals("4X4")){
             this.cantidadCamionetas++;
         }
-        if (fab.containsKey(f)){
-            fab.put(f, 1);
-        } else {
-            fab.put(f, fab.get(f) + 1);
+        if(!fabr.contains(f)){
+            fabr.add(f);
+            numFab.add(1);
         }
+        print(fabr);
     }
 
     public static String vehiculosPorTipo(){
@@ -100,7 +100,7 @@ public class Vehiculo{
         this.fabricante = f;
     }
 
-    
+    /*
     public static Fabricante fabricaMayorVentas(){
         Fabricante m = null;
         int n = 0;
@@ -116,5 +116,5 @@ public class Vehiculo{
             return m;
         }
     }
-    
+    */
 }
