@@ -37,7 +37,7 @@ public class Vehiculo{
     public static int getCantidadVehiculos(){
         return Vehiculo.CantidadVehiculos;
     }
-    public void setCantidadVehiculos(int c){
+    public static void setCantidadVehiculos(int c){
         Vehiculo.CantidadVehiculos = c;
     }
 
