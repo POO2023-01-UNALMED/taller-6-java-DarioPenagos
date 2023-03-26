@@ -11,7 +11,7 @@ public class Pais {
         if(vendidos.containsKey(nombre)){
             vendidos.put(this, 1);
         } else {
-            vendidos.put(this, vendidos.get(nombre));
+            vendidos.put(this, vendidos.get(nombre)+1);
         }
     }
     public String getNombre(){

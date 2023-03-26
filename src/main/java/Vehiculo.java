@@ -1,5 +1,8 @@
 package vehiculos;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class Vehiculo{
     String placa;
     int puertas;
@@ -13,6 +16,8 @@ public class Vehiculo{
     static int cantidadAutos = 0;
     static int cantidadCamionetas = 0;
     static int cantidadCamiones =0;
+    static Map<Fabricante, Integer> fabricante = new HashMap<Fabricante, Integer>();
+
     public Vehiculo(String placa, int puertas, int vmax, String nom, int precio, int peso, String trac, Fabricante f){
         this.placa = placa;
         this.puertas = puertas;
@@ -28,6 +33,11 @@ public class Vehiculo{
             this.cantidadCamiones++;
         } else if (trac.equals("4X4")){
             this.cantidadCamionetas++;
+        }
+        if (fabricante.containsKey(f)){
+            fabricante.put(f, 1);
+        } else {
+            fabricante.put(f, fabricante.get(f) + 1)
         }
     }
 
@@ -90,4 +100,15 @@ public class Vehiculo{
         this.fabricante = f;
     }
 
+    public static Fabricante fabricaMayorVentas(){
+        Fabricante m = new Fabricante("noo", new pais("nononononononoo"));
+        int n = 0;
+        for Map.Entry<Fabricante,Integer> entry : vendidos.entrySet(){
+            if (n == 0 || entry.getValue() > n){
+                m = entry.getKey();
+                n = entry.getValue();
+            }
+        }
+        return m;
+    }
 }
