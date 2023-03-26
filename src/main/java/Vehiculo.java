@@ -38,7 +38,7 @@ public class Vehiculo{
             fabr.add(f);
             numFab.add(1);
         }
-        print(fabr);
+        System.out.println(fabr);
     }
 
     public static String vehiculosPorTipo(){
