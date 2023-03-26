@@ -9,7 +9,7 @@ public class Vehiculo{
     int peso;
     String traccion;
     Fabricante fabricante;
-    static int CantidadVehículos = 0;
+    static int CantidadVehiculos = 0;
     static int cantidadAutos = 0;
     static int cantidadCamionetas = 0;
     static int cantidadCamiones =0;
