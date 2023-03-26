@@ -14,12 +14,12 @@ public class Pais {
         } else {
             vendidos.put(this, vendidos.get(nombre)+1);
         }
-        int n = vendidos.get(p);
-        Pais.masVendedor = p;
+        int n = vendidos.get(this);
+        Pais.masVendedor = this;
         for(Map.Entry<Pais,Integer> entry : vendidos.entrySet()){
             if (entry.getValue() > n){
-                n = entry.getKey();
-                Vehiculos.masVendedor = entry.getValue();
+                n = entry.getValue();
+                Pais.masVendedor = entry.getValue();
             }
         }
         
