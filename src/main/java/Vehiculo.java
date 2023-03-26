@@ -15,8 +15,8 @@ public class Vehiculo{
     static int cantidadAutos = 0;
     static int cantidadCamionetas = 0;
     static int cantidadCamiones =0;
-    static ArrayList<Integer> numFab = new ArrayList<Integer>(0);
-    static ArrayList<Fabricante> fabr = new ArrayList<Fabricante>(0);
+    static ArrayList<Integer> numFab = new ArrayList<Integer>();
+    static ArrayList<Fabricante> fabr = new ArrayList<Fabricante>();
 
     public Vehiculo(String placa, int puertas, int vmax, String nom, int precio, int peso, String trac, Fabricante f){
         this.placa = placa;
