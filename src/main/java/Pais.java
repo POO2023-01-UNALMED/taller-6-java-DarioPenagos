@@ -21,7 +21,7 @@ public class Pais {
         } else if (vendidos.get(this) > vendidos.get(Pais.masVendedor)){
             Pais.masVendedor = this;
         }
-        System.out.println(masVendedor);
+        System.out.println(Pais.masVendedor);
     }
     public String getNombre(){
         return this.nombre;
@@ -46,5 +46,8 @@ public class Pais {
         return masVendedor;
     }
     */
+    public static Pais paisMasVendedor(){
+        return Pais.masVendedor;
+    }
 
 }
