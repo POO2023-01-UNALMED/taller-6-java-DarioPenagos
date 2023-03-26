@@ -34,6 +34,12 @@ public class Vehiculo{
     public String vehiculosPorTipo(){
         return "Automoviles: " + cantidadAutos + "Camionetas: " + cantidadCamionetas + "Camiones: " + cantidadCamiones;
     }
+    public int getCantidadVehiculos(){
+        return this.CantidadVehiculos;
+    }
+    public void setCantidadVehiculos(int c){
+        this.CantidadVehiculos = i;
+    }
 
     public String getPlaca(){
         return this.placa;

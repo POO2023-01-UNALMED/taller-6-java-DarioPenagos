@@ -3,7 +3,7 @@ package vehiculos;
 public class Fabricante {
     String nombre;
     Pais pais;
-    Fabricante(String nom, Pais p){
+    public Fabricante(String nom, Pais p){
         this.nombre = nom;
         this.pais = p;
     }
