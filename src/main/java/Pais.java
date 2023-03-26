@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Pais {
     String nombre = "";
-    //static Pais masVendedor = new Pais("");
+    static Pais masVendedor = new Pais("");
     static Map<Pais, Integer> vendidos = new HashMap<Pais, Integer>();
     public Pais(String nombre){
         this.nombre = nombre;
