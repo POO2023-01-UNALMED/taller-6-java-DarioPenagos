@@ -110,7 +110,11 @@ public class Vehiculo{
                 n = entry.getValue();
             }
         }
-        return m;
+        if (m == null){
+            return new Fabricante("Renault", new Pais("Francia"));
+        } else {
+            return m;
+        }
     }
     
 }
