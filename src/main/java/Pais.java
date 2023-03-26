@@ -31,7 +31,7 @@ public class Pais {
     }
 
     
-    public static Pais paisMasVendedor(){
+    public Pais paisMasVendedor(){
         int n = 0;
         for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
             if(entry.getValue() > n){
@@ -46,6 +46,7 @@ public class Pais {
         for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
             return entry.getKey();
         }
+        return new Pais("Hola");
     }
     
 
