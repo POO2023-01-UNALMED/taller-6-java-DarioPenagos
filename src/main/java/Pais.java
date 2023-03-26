@@ -43,7 +43,9 @@ public class Pais {
                 return entry.getKey();
             }
         }
-        return masVendedor;
+        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
+            return entry.getKey();
+        }
     }
     
 
