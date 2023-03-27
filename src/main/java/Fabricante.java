@@ -1,7 +1,7 @@
 package vehiculos;
 
 import java.util.HashMap;
-import Java.util.Map;
+import java.util.Map;
 import java.util.Map.Entry;
 
 
@@ -9,6 +9,7 @@ public class Fabricante {
     String nombre;
     Pais pais;
     static Map<Fabricante, Integer> ventasPorFabrica = new HashMap <Fabricante, Integer>();
+
     public Fabricante(String nom, Pais p){
         this.nombre = nom;
         this.pais = p;
