@@ -46,8 +46,9 @@ public class Pais {
         return masVendedor;
     }
     */
+    static Pais vend = new Pais("ho");
     public static Pais paisMasVendedor(){
-        return Pais.masVendedor;
+        return Pais.vend;
     }
 
 }
