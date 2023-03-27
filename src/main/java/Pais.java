@@ -31,7 +31,7 @@ public class Pais {
     }
 
     public static Pais paisMasVendedor(){
-        returnPais.masVendedor;
+        return Pais.masVendedor;
     }
 
     /*
