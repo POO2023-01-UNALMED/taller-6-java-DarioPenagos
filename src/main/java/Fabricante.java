@@ -3,6 +3,7 @@ package vehiculos;
 public class Fabricante {
     String nombre;
     Pais pais;
+    static Map<Fabricante, Integer> ventasPorFabrica = new HashMap <Fabricante, Integer>();
     public Fabricante(String nom, Pais p){
         this.nombre = nom;
         this.pais = p;
@@ -21,7 +22,18 @@ public class Fabricante {
     }
     
     public static Fabricante fabricaMayorVentas(){
-        return new Fabricante("renault", new Pais("Francia"));
+        int valorMax = -1;
+        Fabricante fabricaMayorVentas = null;
+
+        for (Entry<Fabricante, Integer> entry : ventasPorFabrica.entrySet()) {
+            int valorActual = entry.getValue();
+
+            if (valorActual > valorMax){
+                valorMax = valorActual;
+                fabricaMayorVentas = entry.getKey();
+            }
+        }
+        return fabricaMayorVentas;
     }
     
 }
