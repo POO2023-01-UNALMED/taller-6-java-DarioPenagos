@@ -2,9 +2,14 @@ package vehiculos;
 
 public class Automovil extends Vehiculo{
     int puestos;
+    static int cantidadAutomoviles;
     public Automovil(String plac, String nom, int pre, int pes, Fabricante f, int puestos){
         super(plac, 4, 100, nom, pre, pes, "FWD", f);
         this.puestos = puestos;
+        Automovil.cantidadAutomoviles++;
+    }
+    public static int getCantidadAutomoviles(){
+        return cantidadAutomoviles
     }
     public int getPuestos(){
         return this.puestos;
