@@ -43,12 +43,8 @@ public class Pais {
                 return entry.getKey();
             }
         }
-        return masVendedor;
     }
     */
-    static Pais vend = new Pais("ho");
-    public static Pais paisMasVendedor(){
-        return Pais.vend;
-    }
+    
 
 }
