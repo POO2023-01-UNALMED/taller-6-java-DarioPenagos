@@ -30,6 +30,10 @@ public class Pais {
         this.nombre = n;
     }
 
+    public static Pais paisMasVendedor(){
+        returnPais.masVendedor;
+    }
+
     /*
     public static Pais paisMasVendedor(){
         int n = 0;
