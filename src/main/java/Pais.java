@@ -5,51 +5,34 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 public class Pais {
-    String nombre = "";
-    static Pais masVendedor;
-    static Map<Pais, Integer> vendidos = new HashMap<Pais, Integer>();
-    public Pais(String nombre){
-        this.nombre = nombre;
-        if(vendidos.containsKey(nombre)){
-            vendidos.put(this, 1);
-        } else {
-            vendidos.put(this, vendidos.get(nombre)+1);
-        }
+    private String nombre;
+    static Map<Pais, Integer> ventasPorPais = new HashMap <Pais, Integer>();
 
-        int n = vendidos.get(this);
-        if (Pais.masVendedor == null){
-            Pais.masVendedor = this;
-        } else if (vendidos.get(this) > vendidos.get(Pais.masVendedor)){
-            Pais.masVendedor = this;
+    public static Pais paisMasVendedor(){
+        int valorMax = -1;
+        Pais paisMasVendedor = null;
+
+        for (Entry<Pais, Integer> entry : ventasPorPais.entrySet()){
+            final int valorActual = entry.getValue();
+
+            if (valorActual > valorMax){
+                valorMax = valorActual;
+                paisMasVendedor = entry.getKey();
+            }
         }
-        System.out.println(Pais.masVendedor);
+        return paisMasVendedor
+    }
+
+    public Pais(String nombre) {
+        this.nombre = nombre;
     }
     public String getNombre(){
-        return this.nombre;
-    }
-    public void setNombre(String n){
-        this.nombre = n;
+        return nombre;
     }
 
-    public static Pais paisMasVendedor(){
-        return Pais.masVendedor;
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }
 
-    /*
-    public static Pais paisMasVendedor(){
-        int n = 0;
-        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
-            if(entry.getValue() > n){
-                n = entry.getValue();
-            }
-        }
-        for(Map.Entry<Pais, Integer> entry : vendidos.entrySet()){
-            if(n == entry.getValue()){
-                return entry.getKey();
-            }
-        }
-    }
-    */
-    
 
 }
