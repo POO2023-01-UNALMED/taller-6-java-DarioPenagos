@@ -1,5 +1,10 @@
 package vehiculos;
 
+import java.util.HashMap;
+import Java.util.Map;
+import java.util.Map.Entry;
+
+
 public class Fabricante {
     String nombre;
     Pais pais;
